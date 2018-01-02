@@ -16,9 +16,12 @@ mv openshift-origin-client-tools-v1.5.0-031cbe4-linux-64bit/* /usr/local/bin/
 # Start the cluster
 oc cluster up
 
- firewall-cmd --list-all
+ firewall-cmd --list-all 
+ 
  firewall-cmd --permanent --add-port=8443/tcp
+ 
  firewall-cmd --permanent --add-port=53/udp
+ 
  firewall-cmd --permanent --add-service=https
  firewall-cmd --permanent --add-service=http
  firewall-cmd --reload
