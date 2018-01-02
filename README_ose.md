@@ -23,6 +23,9 @@ oc cluster up
  firewall-cmd --permanent --add-port=53/udp
  
  firewall-cmd --permanent --add-service=https
+ 
  firewall-cmd --permanent --add-service=http
+ 
  firewall-cmd --reload
+ 
  firewall-cmd --list-all
